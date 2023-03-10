@@ -1,0 +1,13 @@
+---
+- hosts: mysql
+  gather_facts: true
+
+  vars_files:
+    - vars/main.yml
+
+  roles: 
+    - mysql
+
+  tasks:
+    - name: 
+      ping:
